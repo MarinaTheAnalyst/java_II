@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+    // verification an email input
+
+  // let checkEmail = (email) => {
+  //     let emailArr = email.split('');
+  //     if (emailArr.length !== 2){
+  //           return false
+  //     }
+  //
+  //     let [name, fullDomain] = emailArr;
+  //     let [beforeDot, afterDot] = fullDomain.split('');
+  //
+  //     return!(beforeDot.length< 2 || !afterDot || !name)
+  //
+  // }
+  //
+  // console.log(checkEmail(('bohdan@gmail.com')));
+
+  // map usage instance
+
+    // const arr = [1, 2, 3, 4];
+    // let number = arr.map((value)=>value*2);
+    //
+    // console.log(number);
+
+// reduce instances
+//     const arr = [1, 2, 3, 4];
+// let reduci = arr.reduce((acc, value)=>[...acc, value*2], [])
+//     console.log(reduci);
+//
+// let sum = arr.reduce((acc, number)=>acc+number);
+//     console.log(sum);
+//
+//     let users = [
+//         {
+//         name:'kira',
+//         age:25
+//     },
+//         {
+//             name:'lola',
+//             age: 33
+//         },
+//         {
+//         name:'kochana',
+//             age:23
+//         }
+//     ]
+// let minAge = users.reduce((arr, value)=>arr.age>value.age ?value : arr);
+//     console.log(minAge);
+
+    // search instance
+
+    const searchqty = (str, search) =>
+        str.split('').reduce((acc, value) => value === search ? acc + 1 : acc, 0)
+
+    const countas = searchqty('dream draws you to the door of happiness', 'd');
+    console.log(countas);
+
+
+
+
+
+</script>
+</body>
+</html>
